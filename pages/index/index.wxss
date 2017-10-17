@@ -1,21 +1,86 @@
 /**index.wxss**/
-.userinfo {
+.bg {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.userinfo-avatar {
+.bg-avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
-  border-radius: 50%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+
+.bg-text{
+  font-size: 15px;
 }
 
-.usermotto {
-  margin-top: 200px;
+.bg-text:nth-child(1){
+  margin-top: 30px;
+}
+
+.margin-height{
+  height: 50px;
+}
+
+.dot{
+  width: 5px;
+  height: 5px;
+  background-color: #FBB1A6;
+  display: block;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.arrows::after{  
+  content: "∨";
+  color: #FBB1A6;
+  font-size: 30px;
+}
+
+.nav{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  border-top: 2px solid #F9F9F9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-item{
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.icon-text{
+  font-size: 13px;
+}
+
+.btn-add{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: none;
+  background-color: #F7614A;
+  position: relative;
+}
+
+.btn-add::after{
+  content: "+";
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  top: -33px;
+  border: none;
 }

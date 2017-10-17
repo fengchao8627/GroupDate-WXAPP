@@ -1,13 +1,30 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class="bg">
+    <block>
+      <image bindtap="bindViewTap" class="bg-avatar" src="/images/bg.png" background-size="cover"></image>
+      <text class='bg-text'>点击下方按钮</text>
+      <text class='bg-text'>发现您的第一个群约吧</text>
+    </block>
+    <view class='margin-height'></view>
+    <block>
+      <text class='dot'></text>
+      <text class='dot'></text>
+      <text class='dot'></text>
+      <text class='arrows'></text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+<view class='nav'>
+  <view class="nav-item">
+    <image src='/images/date.png' class='icon'></image>
+    <text class='icon-text'>群约</text>
+  </view>
+  <view class="nav-item">
+    <button class='btn-add'></button>
+  </view>
+  <view class="nav-item">
+    <image src='/images/my.png' class='icon'></image>
+    <text class='icon-text'>我的</text>
   </view>
 </view>
